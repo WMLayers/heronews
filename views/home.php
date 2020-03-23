@@ -32,22 +32,45 @@
 			</div>
 		<?php endforeach; ?>
 	</div>
-	<div class="right">
+	<div class="Cright">
 		<div class="topRight">
-			EM DESTAQUE
+			AS MAIS CLICADAS
 		</div>
-		<?php foreach($dest as $i): ?>
-			<div class="destaCont">
-				<a href="<?php echo BASE_URL.'noticias/ler/'.$i['link']; ?>">
-					<div class="imgContDest"  style="background-image: url(<?php echo BASE_URL.'wpast/images/upload/'.$i['arquivo']; ?>);">
-						<div class="backContDest">
-							<div class="titleContDest">
-								<?php echo $i['title']; ?>
+			<?php 
+				$ed = 0;
+				foreach($dest as $i): 
+				if($ed == 0){
+				?>
+					<div class="destaCont">
+						<a href="<?php echo BASE_URL.'noticias/ler/'.$i['link']; ?>">
+							<div class="imgContDest"  style="background-image: url(<?php echo BASE_URL.'wpast/images/upload/'.$i['arquivo']; ?>);">
+								<div class="backContDest">
+									<div class="titleContDest">
+										<?php echo $i['title']; ?>
+										<span><i class="tiny material-icons">whatshot</i>Destaque</span>
+									</div>
+								</div>	
 							</div>
-						</div>	
+						</a>
 					</div>
-				</a>
-			</div>
-		<?php endforeach; ?>
+				<?php 
+				$ed++;
+				}else{
+				?>
+					<div class="destaCont">
+						<a href="<?php echo BASE_URL.'noticias/ler/'.$i['link']; ?>">
+							<div class="imgContDest"  style="background-image: url(<?php echo BASE_URL.'wpast/images/upload/'.$i['arquivo']; ?>);">
+								<div class="backContDest">
+									<div class="titleContDest">
+										<?php echo $i['title']; ?>
+									</div>
+								</div>	
+							</div>
+						</a>
+					</div>
+			<?php
+				} 
+				endforeach; 
+			?>
 	</div>
 </div>

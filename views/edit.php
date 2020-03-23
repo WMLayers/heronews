@@ -17,6 +17,7 @@
 			<input type="text" name="frase" placeholder="A frase principal" autocomplete="off">
 		</div>
 		<div class="inputForm">
+			<small>para adicionar veja tambem adicione uma div com a class="veja"</small>
 			<div class="title">Matéria</div>
 			<textarea name="materiaCompleta" id="editor1" rows="30" cols="50"></textarea>
 		</div>

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?php echo $title; ?></title>
 	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>wpast/css/material_icons/icons.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>wpast/css/fonts/fonts.css">
@@ -27,6 +27,18 @@
 		<i class="material-icons">search</i>
 		<input type="search" name="pesquisa" placeholder="pesquisar">
 	</div>
+	<div class="menuMobile">
+		<i class="material-icons" id="menuClickMobile">menu</i>
+		<i class="material-icons" class="menuClickCloseMobile" id="menuClickCloseMobile">close</i>
+	</div>
+</div>
+<div class="menuMobileInt" id="menuMobileInt">
+	<ul>
+		<li><a href="<?php echo BASE_URL; ?>">artigos</a></li>
+		<li><a href="<?php echo BASE_URL; ?>">listas</a></li>
+		<li><a href="<?php echo BASE_URL; ?>home/contato">contato</a></li>
+		<li><a href="<?php echo BASE_URL; ?>home/equipe">equipe</a></li>
+	</ul>
 </div>
 
 <?php $this->loadVinT($V, $d); ?>
