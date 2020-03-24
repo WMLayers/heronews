@@ -9,6 +9,8 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>wpast/css/style.css">
 </head>
 <body>
+<div id="loading" class="loader"></div>
+<div id="conteudo" style="display: none;">
 <header>
 	<a href="<?php echo BASE_URL; ?>">
 		<img src="<?php echo BASE_URL; ?>wpast/images/logos/logoV.png" height="90">
@@ -29,7 +31,7 @@
 	</div>
 	<div class="menuMobile">
 		<i class="material-icons" id="menuClickMobile">menu</i>
-		<i class="material-icons" class="menuClickCloseMobile" id="menuClickCloseMobile">close</i>
+		<i class="material-icons" id="menuClickCloseMobile">close</i>
 	</div>
 </div>
 <div class="menuMobileInt" id="menuMobileInt">
@@ -43,6 +45,7 @@
 
 <?php $this->loadVinT($V, $d); ?>
 
+</div>
 <script type="text/javascript" src="<?php echo BASE_URL; ?>wpast/js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="<?php echo BASE_URL; ?>ckeditor/ckeditor.js"></script>
 <script type="text/javascript" src="<?php echo BASE_URL; ?>wpast/js/script.js"></script>

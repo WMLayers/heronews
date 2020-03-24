@@ -1,3 +1,10 @@
+jQuery(window).load(function(){
+	$(".loader").delay(1500).fadeOut("slow");
+	$("#conteudo").toggle("fast");
+});
+
+
+
 CKEDITOR.replace('editor1');
 
 $('#uploadUniEnv').on('click', function(){
